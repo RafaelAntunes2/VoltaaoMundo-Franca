@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo3.css">
+    <style>
+        
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .square {
+            width: calc(30% - 10px); 
+            margin-bottom: 20px; 
+        }
+
+        .square img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
     <title>Gastronomia Francesa</title>
 </head>
 <body>
@@ -19,7 +37,27 @@
         </nav>
     </header>
     <main>
-        <p>Descubra a deliciosa comida francesa, incluindo croissants, queijos e vinho.</p>
+        <p>A cozinha francesa é considerada uma das melhores do mundo.
+             Os franceses são conhecidos por sua paixão por comida e vinho.
+              Pratos como croissant, queijo, vinho, escargot, coq au vin
+             e ratatouille são apenas alguns exemplos da culinária francesa.</p>
     </main>
+    <div class="image-grid">
+        <a href="cidades.html">
+        <div class="square">
+            <img src="imagens/franca-mapamundi.jpeg" alt="Imagem 1">
+            <p>A França</p>
+        </a>
+        </div>
+        <div class="square">
+            <img src="imagem2.jpg" alt="Imagem 2">
+        </div>
+        <div class="square">
+            <img src="imagem3.jpg" alt="Imagem 3">
+        </div>
+        <div class="square">
+            <img src="imagem4.jpg" alt="Imagem 4">
+        </div>
+    </div>
 </body>
 </html>

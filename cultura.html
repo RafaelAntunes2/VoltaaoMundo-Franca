@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo3.css">
     <title>Cultura Francesa</title>
     <style>
-        
         .image-grid {
             display: flex;
             flex-wrap: wrap;
@@ -14,13 +14,15 @@
         }
 
         .square {
-            width: calc(30% - 10px); 
-            margin-bottom: 20px; 
+            width: calc(33.33% - 20px); 
+            margin-bottom: 20px;
+            text-align: center; 
         }
 
         .square img {
-            max-width: 100%;
-            height: auto;
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
         }
     </style>
 </head>
@@ -31,7 +33,7 @@
             <ul>
                 <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="sobre.html">Sobre a França</a></li>
-                <li><a href="cidades.html">Cidades Francesas</a></li>
+                <li><a href="cidades.html">Turismo</a></li>
                 <li><a href="gastronomia.html">Gastronomia</a></li>
             </ul>
         </nav>
@@ -40,18 +42,17 @@
         <p>Arte e Literatura: A França é famosa por sua contribuição à arte e literatura. Grandes nomes como Claude Monet, Auguste Rodin, Marcel Proust e Albert Camus são apenas alguns exemplos. Paris é conhecida como a "Cidade das Artes" e abriga 
             alguns dos museus mais renomados do mundo, incluindo o Louvre.</p>
     </main>
-    <div class="image-grid">
-        <div class="square">
-            <img src="imagens/arco-do-triunfo-paris-1.jpg" alt="Imagem 1">
-        </div>
-        <div class="square">
-            <img src="imagem2.jpg" alt="Imagem 2">
-        </div>
-        <div class="square">
-            <img src="imagem3.jpg" alt="Imagem 3">
-        </div>
-        <div class="square">
-            <img src="imagem4.jpg" alt="Imagem 4">
-        </div>
-</body>
+</main>
+<div class="image-grid">
+    
+    <div class="square">
+        <img src="imagens/arco-do-triunfo-paris-1.jpg" alt="Imagem 2">
+    </div>
+    <div class="square">
+        <img src="imagens/comida-francesa.jpg" alt="Imagem 3">
+    </div>
+    <div class="square">
+        <img src="imagens/museu-do-louvre-em-paris.jpg" alt="Imagem 4">
+    </div>
+</div>
 </html>

@@ -110,11 +110,13 @@ main {
 .small-image {
     max-width: 100%; 
     height: auto; 
-    width: 50%; 
+    width: 50%;
+    border-radius: 10px; 
 }
 
 .image2-left {
     width: 50%; 
     float: right; 
 }
+
 

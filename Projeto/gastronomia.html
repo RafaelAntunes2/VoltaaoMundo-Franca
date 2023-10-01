@@ -5,60 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo3.css">
+    <title>Gastronomia</title>
     <style>
-        
-        .image-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .square {
-            width: calc(30% - 10px); 
-            margin-bottom: 20px; 
-        }
-
-        .square img {
-            max-width: 100%;
-            height: auto;
+        main {
+            text-align: center; 
         }
     </style>
-    <title>Gastronomia Francesa</title>
 </head>
 <body>
     <header>
-        <h1>Gastronomia Francesa</h1>
+        <h1>Gastronomia</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="sobre.html">Sobre a França</a></li>
-                <li><a href="cidades.html">Turismo</a></li>
+                <li><a href="turismo.html">Turismo</a></li>
                 <li><a href="cultura.html">Cultura Francesa</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <p>A cozinha francesa é considerada uma das melhores do mundo.
-             Os franceses são conhecidos por sua paixão por comida e vinho.
-              Pratos como croissant, queijo, vinho, escargot, coq au vin
-             e ratatouille são apenas alguns exemplos da culinária francesa.</p>
+        <section class="section-margin">
+            <h2>Coq au Vin</h2>
+            <div class="row">
+                <div class="col-md-6 text-left">
+                    <p>O Coq au Vin é um prato clássico da culinária francesa conhecido por sua riqueza de sabores e sua base de ingredientes simples, mas de alta qualidade. Tradicionalmente, ele é preparado com pedaços de frango (coq significa galo em francês) cozidos lentamente em vinho tinto, geralmente vinho tinto da Borgonha, junto com cogumelos, cebolas, bacon e ervas aromáticas.</p>
+
+                    <p>Ingredientes:</p>
+                    <ul>
+                        <li>1 frango inteiro ou 4 coxas de frango com osso e pele</li>
+                        <li>200g de bacon, cortado em cubos</li>
+                        <li>200g de cogumelos frescos, cortados em fatias</li>
+                        <li>12-15 pequenas cebolas pérolas, descascadas</li>
+                        <li>3-4 dentes de alho, picados</li>
+                        <li>750ml de vinho tinto (preferencialmente da Borgonha)</li>
+                        <li>2-3 ramos de tomilho fresco</li>
+                        <li>2 folhas de louro</li>
+                        <li>2 colheres de sopa de farinha de trigo</li>
+                        <li>2 colheres de sopa de manteiga</li>
+                        <li>Sal e pimenta a gosto</li>
+                        <li>Azeite de oliva para refogar</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 image1-right">
+                    <figure>
+                        <img class="small-image" src="imagens/coq-au-vin-3740fe3.jpg" alt="Imagem 1">
+                        <figcaption>Coq au Vin</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="section-margin">
+            <h2>Ratatouille</h2>
+            <div class="row">
+                <div class="col-md-6 image2-left">
+                    <figure>
+                        <img class="small-image" src="imagens/BFV13909_BakedRatatouille-ThumbTextless1080.jpg" alt="Imagem 1">
+                        <figcaption>Ratatouille</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-6 text-left">
+                    <p>Ratatouille é um prato tradicional da culinária provençal, originário da região de Nice, no sul da França. Este prato é conhecido por sua simplicidade e sabor incrível, sendo uma ótima maneira de aproveitar legumes frescos da estação. É um prato vegetariano que combina perfeitamente ingredientes como berinjela, abobrinha, pimentão, tomate e ervas aromáticas. Aqui está uma receita clássica de ratatouille:</p>
+
+                    <p>Ingredientes:</p>
+                    <ul>
+                        <li>1 berinjela média, cortada em cubos</li>
+                        <li>1 abobrinha média, cortada em cubos</li>
+                        <li>1 pimentão vermelho, cortado em tiras</li>
+                        <li>1 pimentão amarelo, cortado em tiras</li>
+                        <li>2 tomates maduros, cortados em cubos</li>
+                        <li>1 cebola grande, cortada em fatias finas</li>
+                        <li>3 dentes de alho, picados</li>
+                        <li>2 colheres de sopa de azeite de oliva</li>
+                        <li>2 colheres de chá de tomilho fresco</li>
+                        <li>2 colheres de chá de manjericão fresco</li>
+                        <li>2 colheres de chá de orégano fresco</li>
+                        <li>Sal e pimenta a gosto</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
-    <div class="image-grid">
-        <a href="cidades.html">
-        <div class="square">
-            <img src="imagens/franca-mapamundi.jpeg" alt="Imagem 1">
-            <p>A França</p>
-        </a>
-        </div>
-        <div class="square">
-            <img src="imagens/ratatouille-culinaria-francesa.jpg" alt="Uma imagem da Torre Eiffel em Paris, França".>
-        </div>
-        <div class="square">
-            <img src="imagem3.jpg" alt="Imagem 3">
-        </div>
-        <div class="square">
-            <img src="imagem4.jpg" alt="Imagem 4">
-        </div>
-    </div>
 </body>
 </html>

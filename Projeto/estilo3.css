@@ -1,4 +1,7 @@
 
+
+
+
 body {
     background-image: url('imagens/torre_eiffel_paris.jpg');
     background-size: cover;
@@ -8,7 +11,24 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color:white
+    color: white;
+    position: relative; /* Adicione esta linha */
+}
+
+/* Estilos para os ícones */
+.icon-container {
+    position: relative; /* Define a posição relativa */
+    z-index: 2; /* Valor maior para que os ícones fiquem à frente da imagem de fundo */
+    text-align: center;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adicione uma cor de fundo transparente aos ícones */
+    border-radius: 10px; /* Arredonde as bordas dos ícones */
+    padding: 10px;
+}
+
+.icon-container img {
+    max-width: 100%;
+    height: auto;
 }
 
 header {
@@ -54,3 +74,5 @@ main {
 .conteudo-transparente p {
     font-size: 16px;
 }
+
+

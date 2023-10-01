@@ -12,17 +12,17 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     color: white;
-    position: relative; /* Adicione esta linha */
+    position: relative; 
 }
 
-/* Estilos para os ícones */
+
 .icon-container {
-    position: relative; /* Define a posição relativa */
-    z-index: 2; /* Valor maior para que os ícones fiquem à frente da imagem de fundo */
+    position: relative; 
+    z-index: 2; 
     text-align: center;
     margin: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Adicione uma cor de fundo transparente aos ícones */
-    border-radius: 10px; /* Arredonde as bordas dos ícones */
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
     padding: 10px;
 }
 
@@ -74,5 +74,47 @@ main {
 .conteudo-transparente p {
     font-size: 16px;
 }
+.main-content p {
+    text-align: left;
+    
+}
 
+.text1-left {
+    width: 50%; 
+    float: left; 
+    padding-right: 20px; 
+}
+
+.text2-right {
+    width: 50%; 
+    float: right; 
+    padding-right: 20px; 
+}
+
+
+.clear {
+    clear: both;
+}
+
+
+.image1-right {
+    width: 50%; 
+    float: right; 
+}
+
+
+.image-right img {
+    max-width: 100%; 
+    height: auto; 
+}
+.small-image {
+    max-width: 100%; 
+    height: auto; 
+    width: 50%; 
+}
+
+.image2-left {
+    width: 50%; 
+    float: right; 
+}
 

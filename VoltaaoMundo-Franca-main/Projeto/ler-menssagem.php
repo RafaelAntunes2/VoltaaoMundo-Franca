@@ -1,6 +1,6 @@
 <?php
 
-require_once "Classes/Disciplinas.php";
+require_once "Classes/Usuario.php";
 
 $disc = new Usuario();
 
@@ -18,6 +18,7 @@ $lista = $disc->listar();
         <h3>Mural de menssagens</h3>
         <table Border="1">
             <tr>
+                <th>id</th>
                 <th>Nome</th>
                 <th>E-Mail</th>
                 <th>Menssagem</th>
@@ -30,6 +31,7 @@ $lista = $disc->listar();
     <td><?php echo $linha['nome']?></td>
     <td><?php echo $linha['email']?></td>
     <td><?php echo $linha['menssagem']?></td>
+    <td><?php echo $linha['statu']?></td>
 
     <a href="Disciplina-editar.php?id=<?= $linha['ID']?>">Marcar como lida</a>
 

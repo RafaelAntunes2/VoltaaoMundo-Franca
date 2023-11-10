@@ -1,24 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Envie sua Mensagem</title>
+    <style>
+        body {
+            background-image: url('imagens/torre_eiffel_paris.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            position: relative;
+        }
+
+        h1, h3 {
+            color: white; /* Set the color to white */
+            text-align: center;
+        }
+
+        .icon-container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .icon-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        header {
+            background-color: #5555556c;
+            color: rgb(230, 6, 6);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(240, 240, 240);
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .conteudo-transparente {
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(243, 240, 240);
+            color: white;
+        }
+
+        .conteudo-transparente h2 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .conteudo-transparente p {
+            font-size: 16px;
+        }
+
+        .main-content p {
+            text-align: left;
+        }
+
+        .text1-left {
+            width: 50%;
+            float: left;
+            padding-right: 20px;
+        }
+
+        .text2-right {
+            width: 50%;
+            float: right;
+            padding-right: 20px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .image1-right {
+            width: 50%;
+            float: right;
+        }
+
+        .image-right img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .small-image {
+            max-width: 100%;
+            height: auto;
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        .image2-left {
+            width: 50%;
+            float: right;
+        }
+
+        .small-image-turismo {
+            max-width: 100%;
+            height: auto;
+            width: 60%;
+            border-radius: 10px;
+        }
+
+        .login-link {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Additional CSS */
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-<h1>Envie sua Menssagem</h1>
-<h3>Envie sua Menssagem</h3>
-<form action="ler-menssagem.php" method="Post">
-<label for="nome">Nome</label>
-<input type="text" name="nome">
-<br><br>
-<label for="email">E-mail</label>
-<input type="text" name="email">
-<br><br>
-<label for="menssagem">Digite seu comentario</label>
-<input type="text" name="menssagem">
-<br><br>
-<input type="submit" value="Gravar">
-</form>
+    <h1>Envie sua Mensagem</h1>
+    <h3>Envie sua Mensagem</h3>
+    <form action="gravar-mensagem.php" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome">
+
+        <label for="email">E-mail</label>
+        <input type="text" name="email">
+
+        <label for="mensagem">Digite seu comentário</label>
+        <input type="text" name="mensagem">
+
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>

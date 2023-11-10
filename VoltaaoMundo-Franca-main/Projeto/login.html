@@ -5,13 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        body {
+            background-image: url('imagens/torre_eiffel_paris.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 300px;
+            width: 100%;
+        }
+
+        form h3 {
+            text-align: center;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        form input[type="submit"] {
+            background-color: #555;
+            color: white;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #333;
+        }
+    </style>
 </head>
 <body>
-    <h1>Logar no sistema</h1>
     <form action="usuario-login.php" method="post">
         <h3>Bem-vindo!</h3>
-        <input type="text" name="usuario" placeholder="Digite seu nome"> <br><br>
-        <input type="password" name="senha" placeholder="Digite sua senha"> <br><br>
+        <input type="text" name="usuario" placeholder="Digite seu nome">
+        <input type="password" name="senha" placeholder="Digite sua senha">
         <input type="submit" value="Logar">
     </form>
 </body>

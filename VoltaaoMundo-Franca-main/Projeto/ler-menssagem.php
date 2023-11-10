@@ -33,13 +33,14 @@ $lista = $disc->listar();
     <td><?php echo $linha['menssagem']?></td>
     <td><?php echo $linha['statu']?></td>
 
-    <a href="Disciplina-editar.php?id=<?= $linha['ID']?>">Marcar como lida</a>
+    
 
 </td>
 </tr>
 <?php endforeach ?>
 
         </table>
+        <a href="editar-menssagem.php?id=<?= $linha['statu']?>">Marcar como lida</a>
 
     </body>
 
